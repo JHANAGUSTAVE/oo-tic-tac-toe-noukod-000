@@ -81,7 +81,7 @@ end
 # Define your won? here
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    @board[win_combination[0]] ==
+    @board[win_combination[0]] == @board[win_combination[1]] && ==
 end
 
 #code the full? method here
