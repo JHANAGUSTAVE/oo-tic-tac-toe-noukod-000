@@ -88,7 +88,7 @@ def won?
 end
 
 #code the full? method here
-def full?(board)
+def full?
   #return true if every element in the board contains something
   if @board.detect {|i| i == " " || i == nil}
     return false
