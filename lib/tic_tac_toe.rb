@@ -79,7 +79,7 @@ end
   end
   
 # Define your won? here
-def won?(board)
+def won?
   WIN_COMBINATIONS.each do |win_combination|
     @board[win_combination[0]] == @board[win_combination[1]] &&
     @board[win_combination[1]] == @board[win_combination[2]] &&
