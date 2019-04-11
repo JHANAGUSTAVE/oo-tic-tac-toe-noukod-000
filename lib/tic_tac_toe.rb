@@ -99,8 +99,8 @@ end
 
 
 #code the draw? method here
-def draw?(board)
-  if !won?(board) && full?(board)
+def draw?
+  !won? && full?
     return true
   else
     return false
@@ -109,7 +109,7 @@ end
 
 #code the over? method here
 def over?
-  if draw? || won? || full?
+   draw? || won? || full?
     return true
   else
     return false
@@ -117,7 +117,7 @@ def over?
 end
 
 #code the winner method here
-def winner(board)
+def winner
   #return token x or o that won the game
   
   if ( won?(board) )
