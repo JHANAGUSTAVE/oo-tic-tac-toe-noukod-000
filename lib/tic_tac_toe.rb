@@ -82,6 +82,9 @@ end
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     @board[win_combination[0]] == @board[win_combination[1]] &&
+    @board[win_combination[1]] == @board[win_combination[2]] &&
+    position_taken?(win_combination[0])
+  end
 end
 
 #code the full? method here
