@@ -111,20 +111,9 @@ end
 #code the winner method here
 def winner
   #return token x or o that won the game
-  
-  if ( won?(board) )
-    position_array = []
-    (won?(board)).each do |element|
-      position_array << board[element]
-    end
-    choice_X = position_array.all? do|element|
-        element == "X"
-    end
-    if (choice_X )
-      return "X"
-    else
-      return "O"
-    end
+  won = " "
+  if winner = won?
+    won = @board[winner.first]
   end
 end
   
