@@ -106,10 +106,6 @@ end
 #code the over? method here
 def over?
    draw? || won? || full?
-    return true
-  else
-    return false
-  end
 end
 
 #code the winner method here
