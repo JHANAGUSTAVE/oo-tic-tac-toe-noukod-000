@@ -108,8 +108,8 @@ def draw?(board)
 end
 
 #code the over? method here
-def over?(board)
-  if draw?(board) || won?(board) || full?(board)
+def over?
+  if draw? || won? || full?
     return true
   else
     return false
