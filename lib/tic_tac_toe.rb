@@ -118,13 +118,13 @@ def winner
 end
   
 #code the play method here
-def play(board) 
-  while over?(board) == false
-    turn(board)
+def play
+  while over? == false
+    turn
   end
-  if winner(board) == "X"
+  if winner == "X"
     puts "Congratulations #{winner}!"
-  elsif winner(board) == "O"
+  elsif winner == "O"
     puts "Congratulations #{winner}!"
   else
     puts "Cat's Game!"
