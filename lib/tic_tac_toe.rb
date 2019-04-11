@@ -101,10 +101,6 @@ end
 #code the draw? method here
 def draw?
   !won? && full?
-    return true
-  else
-    return false
-  end
 end
 
 #code the over? method here
